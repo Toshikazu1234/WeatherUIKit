@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Seattle",
+        "local_names": {
+            "ug": "Séatl",
+            "zh": "西雅圖",
+            "tt": "Сиэтл",
+            "af": "Seattle",
+            "ja": "シアトル",
+            "am": "ስያትል",
+            "ru": "Сиэтл",
+            "be": "Сіэтл",
+            "la": "Seattlum",
+            "ar": "سياتيل، واشنطن",
+            "uk": "Сієтл",
+            "oc": "Seattle",
+            "ko": "시애틀",
+            "en": "Seattle",
+            "lv": "Sietla",
+            "lt": "Sietlas",
+            "uz": "Sietl",
+            "kn": "ಸಿಯಾಟಲ್",
+            "fr": "Seattle",
+            "eo": "Seatlo",
+            "bg": "Сиатъл",
+            "bs": "Seattle"
+        },
+        "lat": 47.6038321,
+        "lon": -122.330062,
+        "country": "US",
+        "state": "Washington"
+    }
+]
