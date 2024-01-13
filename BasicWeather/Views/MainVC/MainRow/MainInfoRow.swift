@@ -37,7 +37,7 @@ final class MainInfoRow: UITableViewCell {
         weatherLabel.text = weather.weather.first?.main
         if let main = weather.main {
             if let temp = main.temp {
-                tempLabel.text = "\(Int(temp))"
+                tempLabel.text = "\(Int(temp))°"
             } else {
                 tempLabel.text = "N/A"
             }
