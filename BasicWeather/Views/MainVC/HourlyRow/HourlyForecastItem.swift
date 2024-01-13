@@ -24,7 +24,7 @@ final class HourlyForecastItem: UICollectionViewCell {
             img.image = nil
         }
         if let temp = forecast.main?.temp {
-            tempLabel.text = "\(Int(temp))"
+            tempLabel.text = "\(Int(temp))°"
         } else {
             tempLabel.text = nil
         }
