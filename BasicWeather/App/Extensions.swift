@@ -21,9 +21,9 @@ extension [WeeklyForecastList] {
                 continue
             }
             if dailyAverages.last?.day == day {
-                let i = dailyAverages.count - 1
-                dailyAverages[i].lows.append(low)
-                dailyAverages[i].highs.append(high)
+                let j = dailyAverages.count - 1
+                dailyAverages[j].lows.append(low)
+                dailyAverages[j].highs.append(high)
             } else {
                 dailyAverages.append(parse(using: item))
             }
