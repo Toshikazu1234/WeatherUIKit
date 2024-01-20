@@ -12,8 +12,7 @@ extension [WeeklyForecastList] {
     /// - Returns: [DailyForecast] with max count of 5
     func getDailyAverage() -> [DailyForecast] {
         var dailyAverages: [DailyForecast] = []
-        for i in 0..<self.count {
-            let item = self[i]
+        for item in self {
             guard let day = item.dt?.toDay(), let low = item.main?.tempMin, let high = item.main?.tempMax else { continue }
             
             guard dailyAverages.count > 0 else {
