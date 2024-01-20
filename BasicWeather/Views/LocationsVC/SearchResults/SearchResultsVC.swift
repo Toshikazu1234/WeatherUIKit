@@ -13,9 +13,7 @@ protocol SearchResultsVCDelegate where Self: UIViewController {
 
 final class SearchResultsVC: UIViewController {
     weak var delegate: SearchResultsVCDelegate?
-    
-    private var searchTerm: String?
-    
+        
     private var results: [LocationSearch] = []
     
     private lazy var tableView: UITableView = {
@@ -44,7 +42,6 @@ final class SearchResultsVC: UIViewController {
     
     func update(search text: String) {
         guard !text.isEmpty else {
-            searchTerm = nil
             results = []
             tableView.reloadData()
             return
