@@ -44,6 +44,7 @@ extension LocationsVC: UISearchResultsUpdating {
         guard let text = searchController.searchBar.text, let searchResults = searchController.searchResultsController as? SearchResultsVC else {
             return
         }
+        searchResults.delegate = self
         searchTimer.invalidate()
         searchTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
             guard let self else { return }
