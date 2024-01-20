@@ -52,8 +52,9 @@ final class SearchResultsVC: UIViewController {
                 return
             }
             DispatchQueue.main.async { [weak self] in
-                self?.results = locations
-                self?.tableView.reloadData()
+                guard let self else { return }
+                results = locations
+                tableView.reloadData()
             }
         }
     }
