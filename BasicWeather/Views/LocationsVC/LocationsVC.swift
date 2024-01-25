@@ -41,7 +41,7 @@ final class LocationsVC: UIViewController {
 
 extension LocationsVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchController.searchBar.text, let searchResults = searchController.searchResultsController as? SearchResultsVC else {
+        guard let text = searchController.searchBar.text, !text.isEmpty, let searchResults = searchController.searchResultsController as? SearchResultsVC else {
             return
         }
         searchResults.delegate = self

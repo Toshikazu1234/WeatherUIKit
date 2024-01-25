@@ -41,11 +41,6 @@ final class SearchResultsVC: UIViewController {
     }
     
     func update(search text: String) {
-        guard !text.isEmpty else {
-            results = []
-            tableView.reloadData()
-            return
-        }
         Api.shared.search(text) { locations in
             guard let locations, !locations.isEmpty else {
                 // TODO: - Display no results UI
